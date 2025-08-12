@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: test
+  datasource:
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/nsh?rewriteBatchedStatements=true
+server:
+  port: 8080
+jimmer:
+  dialect: org.babyfish.jimmer.sql.dialect.PostgresDialect
+  show-sql: on
+  pretty-sql: on
+  default-batch-size: 100
+  default-list-batch-size: 100
+  language: kotlin

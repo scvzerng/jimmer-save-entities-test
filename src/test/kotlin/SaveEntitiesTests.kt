@@ -27,7 +27,7 @@ class SaveEntitiesTests {
         }))
         // 根据id=1修改memberCount的值未生效
         val record1 = sqlClient.findById(TestRecord::class, 1L)!!
-        Assertions.assertSame(record1.memberCount, 999L)
+        Assertions.assertEquals(record1.memberCount, 999L)
     }
     /**
      * 测试混合save

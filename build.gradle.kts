@@ -8,7 +8,7 @@ plugins {
 group = "com.scvzerng"
 version = "1.0-SNAPSHOT"
 
-val jimmerVersion = "0.9.105"
+val jimmerVersion = "0.9.106"
 val springbootVersion = "3.2.4"
 
 repositories {

@@ -8,7 +8,7 @@ plugins {
 group = "com.scvzerng"
 version = "1.0-SNAPSHOT"
 
-val jimmerVersion = "0.9.106"
+val jimmerVersion = "0.9.113"
 val springbootVersion = "3.2.4"
 
 repositories {
@@ -21,6 +21,8 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-mail")
+    implementation("javax.validation:validation-api:2.0.1.Final")
+    implementation("org.hibernate.validator:hibernate-validator:6.2.5.Final")
     implementation("org.babyfish.jimmer:jimmer-spring-boot-starter:${jimmerVersion}")
     implementation("org.babyfish.jimmer:jimmer-core:${jimmerVersion}")
     compileOnly("org.babyfish.jimmer:jimmer-sql:${jimmerVersion}")
